@@ -1,0 +1,3 @@
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/CMakeFiles/rebuild_cache.dir
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/CMakeFiles/edit_cache.dir
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/CMakeFiles/runTests.dir

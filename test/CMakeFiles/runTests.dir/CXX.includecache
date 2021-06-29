@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testLinkedList2.cpp
+gtest/gtest.h
+-
+./src/listas/linkedlist2.h
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/src/listas/linkedlist2.h
+math.h
+-
+
