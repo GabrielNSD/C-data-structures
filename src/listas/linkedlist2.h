@@ -43,31 +43,38 @@ void imprimirLista(struct linkedlist *lista)
 
 struct linkedlist* inicializar() {
     //TODO
+    return 0;
 }
 
 struct no* alocarNovoNo(int valor) {
     //TODO
+    return 0;
 }
 
 void inserirElementoNoFim(struct linkedlist* lista, int valor) {
     //TODO
     //caso esteja vazia, criar novo no
     //caso nao esteja vazia, percorrer toda a lista e inserir novo nó no final
+    return;
 
 }
 
 void inserirElementoNoInicio(struct linkedlist* lista, int valor) {
     //TODO
+    return;
 }
 
 void inserirElementoEmPosicao(struct linkedlist* lista, int valor, int posicao) {
     //TODO
+    return;
 }
 
 int obterElementoEmPosicao(struct linkedlist* lista, int posicao) {
     //TODO
+    return 0;
 }
 
 void removerElementoEmPosicao(struct linkedlist* lista, int posicao) {
     //TODO
+    return;
 }

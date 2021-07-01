@@ -57,27 +57,27 @@ include CMakeFiles/runTests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/runTests.dir/flags.make
 
-CMakeFiles/runTests.dir/testLinkedList2.cpp.o: CMakeFiles/runTests.dir/flags.make
-CMakeFiles/runTests.dir/testLinkedList2.cpp.o: testLinkedList2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/testLinkedList2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/testLinkedList2.cpp.o -c /home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testLinkedList2.cpp
+CMakeFiles/runTests.dir/testArrayList2.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/testArrayList2.cpp.o: testArrayList2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/testArrayList2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/testArrayList2.cpp.o -c /home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testArrayList2.cpp
 
-CMakeFiles/runTests.dir/testLinkedList2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/testLinkedList2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testLinkedList2.cpp > CMakeFiles/runTests.dir/testLinkedList2.cpp.i
+CMakeFiles/runTests.dir/testArrayList2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/testArrayList2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testArrayList2.cpp > CMakeFiles/runTests.dir/testArrayList2.cpp.i
 
-CMakeFiles/runTests.dir/testLinkedList2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/testLinkedList2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testLinkedList2.cpp -o CMakeFiles/runTests.dir/testLinkedList2.cpp.s
+CMakeFiles/runTests.dir/testArrayList2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/testArrayList2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testArrayList2.cpp -o CMakeFiles/runTests.dir/testArrayList2.cpp.s
 
 # Object files for target runTests
 runTests_OBJECTS = \
-"CMakeFiles/runTests.dir/testLinkedList2.cpp.o"
+"CMakeFiles/runTests.dir/testArrayList2.cpp.o"
 
 # External object files for target runTests
 runTests_EXTERNAL_OBJECTS =
 
-runTests: CMakeFiles/runTests.dir/testLinkedList2.cpp.o
+runTests: CMakeFiles/runTests.dir/testArrayList2.cpp.o
 runTests: CMakeFiles/runTests.dir/build.make
 runTests: /usr/lib/x86_64-linux-gnu/libgtest.a
 runTests: CMakeFiles/runTests.dir/link.txt

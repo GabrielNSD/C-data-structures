@@ -123,32 +123,32 @@ runTests/fast:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
 
-testLinkedList2.o: testLinkedList2.cpp.o
+testArrayList2.o: testArrayList2.cpp.o
 
-.PHONY : testLinkedList2.o
+.PHONY : testArrayList2.o
 
 # target to build an object file
-testLinkedList2.cpp.o:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testLinkedList2.cpp.o
-.PHONY : testLinkedList2.cpp.o
+testArrayList2.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testArrayList2.cpp.o
+.PHONY : testArrayList2.cpp.o
 
-testLinkedList2.i: testLinkedList2.cpp.i
+testArrayList2.i: testArrayList2.cpp.i
 
-.PHONY : testLinkedList2.i
+.PHONY : testArrayList2.i
 
 # target to preprocess a source file
-testLinkedList2.cpp.i:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testLinkedList2.cpp.i
-.PHONY : testLinkedList2.cpp.i
+testArrayList2.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testArrayList2.cpp.i
+.PHONY : testArrayList2.cpp.i
 
-testLinkedList2.s: testLinkedList2.cpp.s
+testArrayList2.s: testArrayList2.cpp.s
 
-.PHONY : testLinkedList2.s
+.PHONY : testArrayList2.s
 
 # target to generate assembly for a file
-testLinkedList2.cpp.s:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testLinkedList2.cpp.s
-.PHONY : testLinkedList2.cpp.s
+testArrayList2.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testArrayList2.cpp.s
+.PHONY : testArrayList2.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... runTests"
-	@echo "... testLinkedList2.o"
-	@echo "... testLinkedList2.i"
-	@echo "... testLinkedList2.s"
+	@echo "... testArrayList2.o"
+	@echo "... testArrayList2.i"
+	@echo "... testArrayList2.s"
 .PHONY : help
 
 
