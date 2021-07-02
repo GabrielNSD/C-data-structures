@@ -20,22 +20,19 @@ struct arraylist *inicializar(int capacidade)
 
 int obterElementoEmPosicao(struct arraylist *lista, int posicao)
 {
-    //TODO
-    //cuidado com casos em que a posição não está contida no array
     return lista->vetor[posicao];
 }
 
 void duplicarCapacidade(struct arraylist *lista)
 {
-    //TODO
-    lista->vetor = (int *)realloc(lista->vetor, 2 * sizeof(lista->vetor) * sizeof(int));
+    lista->vetor = (int *)realloc(lista->vetor, 2 * lista->capacidade * sizeof(int));
+    lista->capacidade = 2 * lista->capacidade;
 }
 
 void inserirElementoNoFim(struct arraylist *lista, int valor)
 {
-    if (lista->qtdade == sizeof(lista->capacidade))
+    if (lista->qtdade == lista->capacidade)
     {
-        printf("%d ei!", lista->qtdade);
         duplicarCapacidade(lista);
     }
     lista->vetor[lista->qtdade] = valor;
@@ -44,26 +41,48 @@ void inserirElementoNoFim(struct arraylist *lista, int valor)
 
 void inserirElementoEmPosicao(struct arraylist *lista, int valor, int posicao)
 {
-    //TODO
-    return;
+    if (posicao >= 0 && posicao < lista->capacidade)
+    {
+        if (lista->qtdade == lista->capacidade)
+        {
+            duplicarCapacidade(lista);
+        }
+        for (int i = lista->qtdade; i > posicao; i--)
+        {
+            lista->vetor[i] = lista->vetor[i - 1];
+        }
+        lista->vetor[posicao] = valor;
+        lista->qtdade++;
+    }
 }
 
 void atualizarElemento(struct arraylist *lista, int valor, int posicao)
 {
-    //TODO
-    return;
+    if (posicao >= 0 && posicao < lista->qtdade)
+    {
+        lista->vetor[posicao] = valor;
+    }
 }
 
 void removerElementoNoFim(struct arraylist *lista)
 {
-    //TODO
-    return;
+    if (lista->qtdade > 0)
+    {
+        lista->qtdade--;
+    }
 }
 
 void removerElementoEmPosicao(struct arraylist *lista, int posicao)
 {
-    //TODO
-    return;
+    if (posicao >= 0 && posicao < lista->capacidade)
+    {
+        while (posicao < lista->qtdade)
+        {
+            lista->vetor[posicao] = lista->vetor[posicao + 1];
+            posicao++;
+        }
+        lista->qtdade--;
+    }
 }
 
 void exibirLista(struct arraylist *lista)
