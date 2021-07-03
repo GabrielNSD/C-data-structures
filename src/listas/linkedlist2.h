@@ -13,8 +13,94 @@ struct linkedlist
     int qtdade;
 };
 
-// int tamanho = 0;
-// struct no *lista;
+struct linkedlist *inicializar()
+{
+    //TODO
+    struct linkedlist *lista = (struct linkedlist *)malloc(sizeof(struct linkedlist));
+    lista->cabeca = NULL;
+    lista->qtdade = 0;
+    return lista;
+}
+
+struct no *alocarNovoNo(int valor)
+{
+    //TODO
+    struct no *novoNo = (struct no *)malloc(sizeof(struct no));
+    novoNo->val = valor;
+    novoNo->prox = NULL;
+    return novoNo;
+}
+
+void inserirElementoNoFim(struct linkedlist *lista, int valor)
+{
+    //TODO
+    //caso esteja vazia, criar novo no
+    if (lista->cabeca == NULL)
+    {
+        lista->cabeca = alocarNovoNo(valor);
+    }
+    //caso nao esteja vazia, percorrer toda a lista e inserir novo nó no final
+    else
+    {
+        struct no *aux = lista->cabeca;
+        while (aux->prox != NULL)
+        {
+            aux = aux->prox;
+        }
+        aux->prox = alocarNovoNo(valor);
+    }
+    lista->qtdade++;
+}
+
+void inserirElementoNoInicio(struct linkedlist *lista, int valor)
+{
+    struct no *novoNo = alocarNovoNo(valor);
+    novoNo->prox = lista->cabeca;
+    lista->cabeca = novoNo;
+    lista->qtdade++;
+}
+
+void inserirElementoEmPosicao(struct linkedlist *lista, int valor, int posicao)
+{
+    //TODO
+    if (lista->cabeca == NULL)
+    {
+        inserirElementoNoFim(lista, valor);
+    }
+    else if (posicao == 0)
+    {
+        inserirElementoNoInicio(lista, valor);
+    }
+    else
+    {
+        struct no *novoNo = alocarNovoNo(valor);
+        struct no *aux = lista->cabeca;
+        for (int i = 0; i < posicao - 1; i++)
+        {
+            aux = aux->prox;
+        }
+        novoNo->prox = aux->prox;
+        aux->prox = novoNo;
+        lista->qtdade++;
+    }
+}
+
+int obterElementoEmPosicao(struct linkedlist *lista, int posicao)
+{
+    //TODO
+    struct no *aux = lista->cabeca;
+    for (int i = 0; i < posicao; i++)
+    {
+        aux = aux->prox;
+    }
+    return aux->val;
+}
+
+void removerElementoEmPosicao(struct linkedlist *lista, int posicao)
+{
+    //TODO
+    return;
+}
 
 void imprimirLista(struct linkedlist *lista)
 {
@@ -39,42 +125,4 @@ void imprimirLista(struct linkedlist *lista)
     {
         printf("A lista está vazia!");
     }
-}
-
-struct linkedlist* inicializar() {
-    //TODO
-    return 0;
-}
-
-struct no* alocarNovoNo(int valor) {
-    //TODO
-    return 0;
-}
-
-void inserirElementoNoFim(struct linkedlist* lista, int valor) {
-    //TODO
-    //caso esteja vazia, criar novo no
-    //caso nao esteja vazia, percorrer toda a lista e inserir novo nó no final
-    return;
-
-}
-
-void inserirElementoNoInicio(struct linkedlist* lista, int valor) {
-    //TODO
-    return;
-}
-
-void inserirElementoEmPosicao(struct linkedlist* lista, int valor, int posicao) {
-    //TODO
-    return;
-}
-
-int obterElementoEmPosicao(struct linkedlist* lista, int posicao) {
-    //TODO
-    return 0;
-}
-
-void removerElementoEmPosicao(struct linkedlist* lista, int posicao) {
-    //TODO
-    return;
 }
