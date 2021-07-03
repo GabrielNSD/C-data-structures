@@ -98,8 +98,31 @@ int obterElementoEmPosicao(struct linkedlist *lista, int posicao)
 
 void removerElementoEmPosicao(struct linkedlist *lista, int posicao)
 {
-    //TODO
-    return;
+    if (lista->qtdade == 1)
+    {
+        lista->cabeca = NULL;
+    }
+    else
+    {
+        //navegar até elemento anterior a posicao
+        struct no *aux = lista->cabeca;
+        if (posicao > 0)
+        {
+            for (int i = 0; i < posicao - 1; i++)
+            {
+                aux = aux->prox;
+            }
+            //atribuir valor aux->prox = valor do prox do no seguinte
+            struct no *temp = aux->prox;
+
+            aux->prox = temp->prox;
+
+            free(temp);
+        } else {
+            lista->cabeca = aux->prox;
+        }
+    }
+    lista->qtdade--;
 }
 
 void imprimirLista(struct linkedlist *lista)
