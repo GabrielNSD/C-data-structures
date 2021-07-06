@@ -6,17 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/listas/linkedlist2.h
-stdio.h
--
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/pilhas/arraystack2.h
 stdlib.h
 -
+stdio.h
+-
+stdbool.h
+-
+limits.h
+-
 
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testLinkedList2.cpp
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testArrayStack2.cpp
 gtest/gtest.h
 -
-../src/listas/linkedlist2.h
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/listas/linkedlist2.h
-math.h
--
+../src/pilhas/arraystack2.h
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/pilhas/arraystack2.h
 
