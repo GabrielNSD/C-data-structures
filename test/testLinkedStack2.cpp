@@ -52,7 +52,7 @@ TEST_F(LinkedListStackTest2, EmpilhamentoPilhaNaoVazia) {
 	//pra certificar que topo() nao remove da pilha
 	EXPECT_EQ(topo(pilha), outroNumQualquer);
 }
-/*
+
 TEST_F(LinkedListStackTest2, DesempilhamentoPilhaNula) {
 	TearDown();
 
@@ -74,7 +74,7 @@ TEST_F(LinkedListStackTest2, DesempilhamentoPilhaNaoVazia) {
 	EXPECT_EQ(pilha->qtdade, 1);
 	EXPECT_EQ(desempilharRetornando(pilha), numQualquer);
 }
-
+/**/
 TEST_F(LinkedListStackTest2, TopoPilhaNula) {
 	TearDown();
 
@@ -109,7 +109,7 @@ TEST_F(LinkedListStackTest2, FuncVazioPilhaNaoVazia) {
 	empilhar(&pilha, numQualquer);
 	EXPECT_FALSE(vazia(pilha));
 }
- */
+
 int main(int argc, char** argv) {
 	testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();

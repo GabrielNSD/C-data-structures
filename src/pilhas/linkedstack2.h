@@ -17,7 +17,6 @@ struct linkedstack
 
 struct linkedstack *inicializar()
 {
-    //TODO
     struct linkedstack *pilha = (struct linkedstack *)malloc(sizeof(struct linkedstack));
     pilha->topo = NULL;
     pilha->qtdade = 0;
@@ -26,7 +25,6 @@ struct linkedstack *inicializar()
 
 struct no *alocarNovoNo(int valor)
 {
-    //TODO
     struct no *novoNo = (struct no *)malloc(sizeof(struct no));
     novoNo->val = valor;
     novoNo->prox = NULL;
@@ -36,8 +34,7 @@ struct no *alocarNovoNo(int valor)
 //retornar true se a pilha for nula ou vazia
 bool vazia(struct linkedstack *pilha)
 {
-    //TODO
-    if (pilha->topo == NULL)
+    if (pilha == NULL || pilha->qtdade == 0)
     {
         return true;
     }
@@ -51,7 +48,6 @@ bool vazia(struct linkedstack *pilha)
 //por causa da possibilidade de instanciacao usamos struct linkedstack**
 void empilhar(struct linkedstack **pilha, int valor)
 {
-    //TODO
     if ((*pilha) == NULL)
     {
         (*pilha) = inicializar();
@@ -66,26 +62,34 @@ void empilhar(struct linkedstack **pilha, int valor)
 //decrementar qtdade se a pilha não estiver nula ou vazia
 void desempilhar(struct linkedstack *pilha)
 {
-    //TODO
-    struct no *aux = pilha->topo;
-    /* aux = aux->prox;
-    struct no *temp = aux->prox; */
-
-    pilha->topo = aux->prox;
-
-    pilha->qtdade--;
+    if (pilha != NULL && pilha->qtdade > 0)
+    {
+        struct no *aux = pilha->topo;
+        pilha->topo = aux->prox;
+        pilha->qtdade--;
+    }
 }
-/*
+
 //retorne a constante INT_MIN se a pilha for nula ou vazia
 int desempilharRetornando(struct linkedstack *pilha)
 {
-    //TODO
+    if (pilha == NULL || pilha->qtdade == 0)
+    {
+        return INT_MIN;
+    }
+    else
+    {
+        struct no *aux = pilha->topo;
+        int temp = pilha->topo->val;
+        aux = aux->prox;
+        pilha->qtdade--;
+        return temp;
+    }
 }
-*/
+
 //retorne a constante INT_MIN se a pilha for nula ou vazia
 int topo(struct linkedstack *pilha)
 {
-    //TODO
     if (pilha == NULL || pilha->qtdade == 0)
     {
         return INT_MIN;
