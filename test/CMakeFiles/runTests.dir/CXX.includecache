@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/pilhas/arraystack2.h
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/pilhas/linkedstack2.h
 stdlib.h
 -
 stdio.h
@@ -15,12 +15,10 @@ stdbool.h
 -
 limits.h
 -
-stdio.h
--
 
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testArrayStack2.cpp
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testLinkedStack2.cpp
 gtest/gtest.h
 -
-../src/pilhas/arraystack2.h
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/pilhas/arraystack2.h
+../src/pilhas/linkedstack2.h
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/pilhas/linkedstack2.h
 

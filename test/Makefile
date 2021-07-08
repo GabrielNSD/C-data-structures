@@ -123,32 +123,32 @@ runTests/fast:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
 
-testArrayStack2.o: testArrayStack2.cpp.o
+testLinkedStack2.o: testLinkedStack2.cpp.o
 
-.PHONY : testArrayStack2.o
+.PHONY : testLinkedStack2.o
 
 # target to build an object file
-testArrayStack2.cpp.o:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testArrayStack2.cpp.o
-.PHONY : testArrayStack2.cpp.o
+testLinkedStack2.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testLinkedStack2.cpp.o
+.PHONY : testLinkedStack2.cpp.o
 
-testArrayStack2.i: testArrayStack2.cpp.i
+testLinkedStack2.i: testLinkedStack2.cpp.i
 
-.PHONY : testArrayStack2.i
+.PHONY : testLinkedStack2.i
 
 # target to preprocess a source file
-testArrayStack2.cpp.i:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testArrayStack2.cpp.i
-.PHONY : testArrayStack2.cpp.i
+testLinkedStack2.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testLinkedStack2.cpp.i
+.PHONY : testLinkedStack2.cpp.i
 
-testArrayStack2.s: testArrayStack2.cpp.s
+testLinkedStack2.s: testLinkedStack2.cpp.s
 
-.PHONY : testArrayStack2.s
+.PHONY : testLinkedStack2.s
 
 # target to generate assembly for a file
-testArrayStack2.cpp.s:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testArrayStack2.cpp.s
-.PHONY : testArrayStack2.cpp.s
+testLinkedStack2.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testLinkedStack2.cpp.s
+.PHONY : testLinkedStack2.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... runTests"
-	@echo "... testArrayStack2.o"
-	@echo "... testArrayStack2.i"
-	@echo "... testArrayStack2.s"
+	@echo "... testLinkedStack2.o"
+	@echo "... testLinkedStack2.i"
+	@echo "... testLinkedStack2.s"
 .PHONY : help
 
 
