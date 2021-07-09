@@ -117,11 +117,8 @@ TEST_F(ArrayQueueTest2, EnfileiramentoDesenfileiramentoFilaCircular) {
 	enfileirar(&fila, 11);
 	
 	for (int i = 2; i < fila->tamanho+2; i++) {
-		printf("%d \n", i);
-		printf("Tras: %d \n", fila->tras);
-		printf("Frente: %d \n", fila->frente);
 		EXPECT_EQ(frente(fila), i);
-		desenfileirar(fila);		
+		desenfileirar(fila);
 	} 
 }
 

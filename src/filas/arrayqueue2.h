@@ -14,7 +14,6 @@ struct arrayqueue
 
 struct arrayqueue *inicializar(int tamArray)
 {
-    //TODO
     struct arrayqueue *fila = (struct arrayqueue *)malloc(sizeof(struct arrayqueue));
     fila->elementos = (int *)calloc(tamArray, sizeof(int));
     fila->frente = 0;
@@ -29,7 +28,6 @@ struct arrayqueue *inicializar(int tamArray)
 //se a fila encher, simplesmente não enfileire
 void enfileirar(struct arrayqueue **fila, int val)
 {
-    //TODO
     if ((*fila) == NULL)
     {
         (*fila) = inicializar(10);
@@ -38,16 +36,7 @@ void enfileirar(struct arrayqueue **fila, int val)
     if ((*fila)->qtdade < (*fila)->tamanho)
     {
         (*fila)->elementos[(*fila)->tras] = val;
-
-        /*  if ((*fila)->tras == 10)
-        {
-            (*fila)->tras = 0;
-        }
-        else
-        {
-            (*fila)->tras++;
-        } */
-        if ((*fila)->tras == (*fila)->tamanho)
+        if ((*fila)->tras == (*fila)->tamanho - 1)
         {
             (*fila)->tras = -1;
         }
@@ -59,7 +48,6 @@ void enfileirar(struct arrayqueue **fila, int val)
 //retorne a constante INT_MIN se a fila for nula ou vazia
 int desenfileirar(struct arrayqueue *fila)
 {
-    //TODO
     if (fila == NULL || fila->qtdade == 0)
     {
         return INT_MIN;
@@ -67,11 +55,9 @@ int desenfileirar(struct arrayqueue *fila)
     else
     {
         int temp = fila->elementos[fila->frente];
-        /* if(fila->qtdade > 0 && fila->frente == 0) {
-            fila->frente = -1;
-        } */
         fila->frente++;
-        if(fila->frente > fila->tamanho) {
+        if (fila->frente > fila->tamanho - 1)
+        {
             fila->frente = 0;
         }
         fila->qtdade--;
@@ -87,7 +73,6 @@ int desenfileirar(struct arrayqueue *fila)
 //retorne a constante INT_MIN se a fila for nula ou vazia
 int frente(struct arrayqueue *fila)
 {
-    //TODO
     if (fila == NULL || fila->qtdade == 0)
     {
         return INT_MIN;
