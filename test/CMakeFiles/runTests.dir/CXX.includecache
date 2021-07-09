@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/filas/arrayqueue2.h
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/filas/linkedqueue2.h
 stdio.h
 -
 stdlib.h
@@ -16,9 +16,9 @@ stdbool.h
 limits.h
 -
 
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testArrayQueue2.cpp
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testLinkedQueue2.cpp
 gtest/gtest.h
 -
-../src/filas/arrayqueue2.h
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/filas/arrayqueue2.h
+../src/filas/linkedqueue2.h
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/filas/linkedqueue2.h
 
