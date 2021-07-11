@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/filas/linkedqueue2.h
-stdio.h
--
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/provas/unidade1.h
 stdlib.h
+-
+stdio.h
 -
 stdbool.h
 -
-limits.h
+math.h
 -
 
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testLinkedQueue2.cpp
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/test/testUnidadeI.cpp
 gtest/gtest.h
 -
-../src/filas/linkedqueue2.h
-/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/filas/linkedqueue2.h
+../src/provas/unidade1.h
+/home/gabrielnsd/Documents/UFRN/EDI/C-data-structures/src/provas/unidade1.h
 
